@@ -15,4 +15,11 @@ def list_all(mongo_collection):
     Returns:
         RawBSONDocument: list of all collection documents
     """
-    return mongo_collection.find()
+    output = mongo_collection.find()
+    if len(output) == 0:
+        return []
+    else:
+        return output
+    
+if __name__ == "__main__":
+    pass
