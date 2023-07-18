@@ -5,7 +5,8 @@ from bson.raw_bson import RawBSONDocument
 from pymongo.collection import Collection
 
 
-def list_all(mongo_collection: Collection) -> RawBSONDocument:
+# def list_all(mongo_collection: Collection) -> RawBSONDocument:
+def list_all(mongo_collection):
     """List all documents in the collection
 
     Args:
